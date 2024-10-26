@@ -1,0 +1,6 @@
+C:\Users\anton\OneDrive\Documents\Tec\QA\Hospital_Management_ASP.NET\Code\ClinicManagement.Tests\obj\Debug\net48\ClinicManagement.Tests.csproj.AssemblyReference.cache
+C:\Users\anton\OneDrive\Documents\Tec\QA\Hospital_Management_ASP.NET\Code\ClinicManagement.Tests\obj\Debug\net48\ClinicManagement.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\OneDrive\Documents\Tec\QA\Hospital_Management_ASP.NET\Code\ClinicManagement.Tests\obj\Debug\net48\ClinicManagement.Tests.AssemblyInfoInputs.cache
+C:\Users\anton\OneDrive\Documents\Tec\QA\Hospital_Management_ASP.NET\Code\ClinicManagement.Tests\obj\Debug\net48\ClinicManagement.Tests.AssemblyInfo.cs
+C:\Users\anton\OneDrive\Documents\Tec\QA\Hospital_Management_ASP.NET\Code\ClinicManagement.Tests\obj\Debug\net48\ClinicManagement.Tests.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Documents\Tec\QA\Hospital_Management_ASP.NET\Code\ClinicManagement.Tests\obj\Debug\net48\ClinicManagement.Tests.sourcelink.json
