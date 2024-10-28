@@ -2635,19 +2635,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anton\\.nuget\\packages\\": {}
+    "C:\\Users\\Josue04\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\Hospital_Management_ASP.NET\\Code\\ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
       "projectName": "ClinicManagement.Tests",
-      "projectPath": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\Hospital_Management_ASP.NET\\Code\\ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
-      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\Hospital_Management_ASP.NET\\Code\\ClinicManagement.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
+      "packagesPath": "C:\\Users\\Josue04\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Josue04\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2662,8 +2662,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\Hospital_Management_ASP.NET\\Code\\DBProject\\Clinic Management System.csproj": {
-              "projectPath": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\Hospital_Management_ASP.NET\\Code\\DBProject\\Clinic Management System.csproj"
+            "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\DBProject\\Clinic Management System.csproj": {
+              "projectPath": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\DBProject\\Clinic Management System.csproj"
             }
           }
         }
@@ -2728,7 +2728,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
