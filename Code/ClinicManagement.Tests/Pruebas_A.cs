@@ -5,7 +5,7 @@ using System.Data;
 namespace ClinicManagement.Tests
 {
     [CollectionDefinition("PruebasAntonio", DisableParallelization = true)]
-    public class UnitTest1
+    public class Pruebas_A
     {
         private static readonly string connString = "Data Source=.\\SQLEXPRESS; Initial Catalog=DBProject; Integrated Security=True; TrustServerCertificate=True";
         //validate login
@@ -557,6 +557,8 @@ namespace ClinicManagement.Tests
             dal.LoadDoctor(ref dt, "HASSAAN");
             Assert.True(dt.Rows.Count > 0);
         }
+
+
 
     }
 }
