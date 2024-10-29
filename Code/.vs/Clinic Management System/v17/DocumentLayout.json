@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\",
+  "WorkspaceRootPath": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|c:\\users\\josue04\\documents\\semestre_6\\qa\\proyecto_pruebas\\proyectoqa\\code\\clinicmanagement.tests\\pruebas_j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|solutionrelative:clinicmanagement.tests\\pruebas_j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|c:\\users\\josue04\\documents\\semestre_6\\qa\\proyecto_pruebas\\proyectoqa\\code\\clinicmanagement.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|c:\\users\\anton\\onedrive\\documents\\tec\\qa\\proyectoqa\\code\\clinicmanagement.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|solutionrelative:clinicmanagement.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|c:\\users\\josue04\\documents\\semestre_6\\qa\\proyecto_pruebas\\proyectoqa\\code\\clinicmanagement.tests\\clinicmanagement.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|solutionrelative:clinicmanagement.tests\\clinicmanagement.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\dbproject\\dal\\mydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|solutionrelative:dbproject\\dal\\mydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\dbproject\\dal\\mydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|solutionrelative:dbproject\\dal\\mydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\dbproject\\admin\\manageclinic.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|solutionrelative:dbproject\\admin\\manageclinic.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pruebas_J.cs",
-              "DocumentMoniker": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_J.cs",
-              "RelativeDocumentMoniker": "ClinicManagement.Tests\\Pruebas_J.cs",
-              "ToolTip": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_J.cs",
-              "RelativeToolTip": "ClinicManagement.Tests\\Pruebas_J.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T03:59:42.049Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ClinicManagement.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
-              "RelativeDocumentMoniker": "ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
-              "ToolTip": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
-              "RelativeToolTip": "ClinicManagement.Tests\\ClinicManagement.Tests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-26T22:38:32.847Z"
+              "Title": "ManageClinic.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\DBProject\\Admin\\ManageClinic.aspx.cs",
+              "RelativeDocumentMoniker": "DBProject\\Admin\\ManageClinic.aspx.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\DBProject\\Admin\\ManageClinic.aspx.cs",
+              "RelativeToolTip": "DBProject\\Admin\\ManageClinic.aspx.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T05:43:58.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\ClinicManagement.Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "ClinicManagement.Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\ClinicManagement.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\ClinicManagement.Tests\\UnitTest1.cs",
               "RelativeToolTip": "ClinicManagement.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABkCAAAAAAAAAAAAACUCAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T19:47:50.351Z",
+              "WhenOpened": "2024-10-28T04:55:37.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "myDAL.cs",
-              "DocumentMoniker": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\DBProject\\DAL\\myDAL.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\DBProject\\DAL\\myDAL.cs",
               "RelativeDocumentMoniker": "DBProject\\DAL\\myDAL.cs",
-              "ToolTip": "C:\\Users\\Josue04\\Documents\\Semestre_6\\QA\\proyecto_pruebas\\ProyectoQA\\Code\\DBProject\\DAL\\myDAL.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Documents\\Tec\\QA\\ProyectoQA\\Code\\DBProject\\DAL\\myDAL.cs",
               "RelativeToolTip": "DBProject\\DAL\\myDAL.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAawBgAAAAAAAAA",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAAAJ0BAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T04:20:55.444Z"
             }
