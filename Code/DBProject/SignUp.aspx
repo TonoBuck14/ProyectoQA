@@ -12,8 +12,7 @@
 
 
      //----------------------Function1-----------------------------//
-     function validateEmail(Email)
-     {
+     function validateEmail(Email) {
          if (Email == "") {
              alert("Email missing. Enter Email.");
              return false;
@@ -50,12 +49,11 @@
 
 
      //----------------------Function2-----------------------------//
-     function validateS() 
-     {
-         var Name      = document.getElementById('<%=sName.ClientID %>').value;
-         var Bdate     = document.getElementById('<%=sBirthDate.ClientID %>').value;
-         var Email     = document.getElementById('<%=sEmail.ClientID %>').value;
-         var phone     = document.getElementById('<%=Phone.ClientID %>').value;
+     function validateS() {
+         var Name = document.getElementById('<%=sName.ClientID %>').value;
+         var Bdate = document.getElementById('<%=sBirthDate.ClientID %>').value;
+         var Email = document.getElementById('<%=sEmail.ClientID %>').value;
+         var phone = document.getElementById('<%=Phone.ClientID %>').value;
          var pass      = document.getElementById('<%=sPassword.ClientID %>').value;
          var cpass     = document.getElementById('<%=scPassword.ClientID %>').value;
          
@@ -125,15 +123,14 @@
      {
          var Email        = document.getElementById('<%=loginEmail.ClientID %>').value;
          var Password     = document.getElementById('<%=loginPassword.ClientID %>').value;
-         
+
          /*now the validation code*/
 
          if (!validateEmail(Email))
              return false;
 
 
-         if (Password == "")
-         {
+         if (Password == "") {
              alert("Password missing. Enter Password.");
              return false;
          }
@@ -145,7 +142,7 @@
      //------------------------------------------------------------------//
      //------------------------------------------------------------------//
 
-</script>
+ </script>
 
 
     <!-- CSS -->

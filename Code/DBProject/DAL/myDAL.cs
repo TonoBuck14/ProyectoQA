@@ -780,7 +780,7 @@ namespace DBProject.DAL
                  */
 
 
-				cmd1 = new SqlCommand("RetrieveBillHistory", con); 
+				cmd1 = new SqlCommand("RetrieveBillHistoryAlt", con); 
 				cmd1.CommandType = CommandType.StoredProcedure;
 
 				/*INPUT*/

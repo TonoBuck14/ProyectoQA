@@ -13,10 +13,10 @@ namespace ClinicManagement.Tests
         public void loginExitosoDevuelveUnEntero0()
         {
             //se usa un usuario que ya existía en la base de datos
-            var email = "admin@clinic.com";
-            var password = "admin";
+            var email = "admin";
+            var password = "admin@clinic.com";
             int type = 3;
-            int id = 15;
+            int id = 1;
 
 
 
