@@ -18,6 +18,14 @@ namespace ClinicManagement.Tests
         private static readonly string connString = "Data Source=.\\SQLEXPRESS; Initial Catalog=DBProject; Integrated Security=True; TrustServerCertificate=True";
 
 
+        // ////////////////////////////////////////////////////////
+        // Prueba 1
+        // ID: 051
+        // Nombre: Get Departamento Info retorna una datatable no nula cuando es exitoso
+        // Descripción: Al pedir la información del departamento se retorna una tabla cuando hay datos y además el estado es 1 indicando que todo bien
+        // Datos de prueba: 
+        // Resultado esperado: Variable "resultado" no es nulo y variable "estado" es 1
+
 
         [Fact]
         public void GetDeptInfo_RetornaUnaDataTable_CuandoEsExitoso_YHayDatos()
@@ -30,11 +38,20 @@ namespace ClinicManagement.Tests
             Assert.NotNull(resultado);
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 2
+        // ID: 052
+        // Nombre: getDeptDoctorInfo retorna una tabla no nula cuando el departamento existe
+        // Descripción: Al solicitar la información de doctores para un departamento existente, se debe retornar una tabla con datos y el estado debe ser 1
+        // Datos de prueba: Nombre del departamento "Dept99"
+        // Resultado esperado: Variable "resultado" no es nula y variable "estado" es 1
+
+
         [Fact]
         public void getDeptDoctorInfo_RetornaUnaTabla_CuandoElDepartamentoExiste()
         {
 
-            // Conexion
 
             SqlConnection con = new SqlConnection(connString);
             con.Open();
@@ -63,6 +80,15 @@ namespace ClinicManagement.Tests
             con.Close();
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 3
+        // ID: 053
+        // Nombre: getDeptDoctorInfo retorna una tabla con cero filas cuando el departamento existe pero no tiene doctores asociados
+        // Descripción: Al solicitar información de doctores para un departamento que existe pero sin doctores, se debe retornar una tabla vacía
+        // Datos de prueba: Nombre del departamento "Dept88"
+        // Resultado esperado: Variable "resultado.Rows.Count" es 0
 
 
         [Fact]
@@ -97,6 +123,16 @@ namespace ClinicManagement.Tests
             con.Close();
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 4
+        // ID: 054
+        // Nombre: getDeptDoctorInfo retorna una tabla con todos los resultados cuando el departamento tiene doctores asociados
+        // Descripción: Al solicitar información de doctores para un departamento que tiene doctores, se debe retornar una tabla con los datos correspondientes
+        // Datos de prueba: Nombre del departamento "Dept77" y doctor con id 3
+        // Resultado esperado: Variable "resultado.Rows.Count" es 1
+
 
         [Fact]
         public void getDeptDoctorInfo_RetornaUnaTablaConTodosLosResultados_CuandoElDepartamentoExistePeroYTieneDoctoresAsociados()
@@ -142,6 +178,16 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 5
+        // ID: 055
+        // Nombre: getDeptDoctorInfo retorna una tabla vacía cuando el departamento no existe
+        // Descripción: Al solicitar información de doctores para un departamento que no existe, se debe retornar una tabla vacía
+        // Datos de prueba: Nombre del departamento "Animales"
+        // Resultado esperado: Variable "resultado.Rows.Count" es 0
+
+
         [Fact]
         public void getDeptDoctorInfo_RetornaUnaTablaVacia_CuandoElDepartamentoNoExiste()
         {
@@ -152,6 +198,15 @@ namespace ClinicManagement.Tests
             Assert.Equal(1, estado);
             Assert.Equal(0, resultado.Rows.Count);
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 6
+        // ID: 056
+        // Nombre: doctorInfoDisplayer funciona cuando el doctor existe
+        // Descripción: Al solicitar información de un doctor existente, se deben retornar los datos correctamente y el estado debe ser 0
+        // Datos de prueba: ID del doctor 3, el resto son variables para recibir el resultado
+        // Resultado esperado: Variable "estado" es 0
 
         [Fact]
         public void doctorInfoDisplayer_FuncionaCuandoElDoctorExiste()
@@ -172,6 +227,16 @@ namespace ClinicManagement.Tests
             Assert.Equal(0, estado);
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 7
+        // ID: 057
+        // Nombre: doctorInfoDisplayer devuelve los datos exactamente como están en la base
+        // Descripción: Al solicitar información de un doctor existente, se deben retornar los datos correctos y el estado debe ser 0
+        // Datos de prueba: ID del doctor 3
+        // Resultado esperado: Las variables devueltas contienen los datos correctos
+
 
         [Fact]
         public void doctorInfoDisplayer_DevuelveLosDatos_ExactamenteComoEstanEnLaBase()
@@ -204,6 +269,16 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 8
+        // ID: 058
+        // Nombre: getFreeSlots devuelve nueve cupos si el doctor no tiene ninguna cita
+        // Descripción: Al consultar los cupos disponibles para un doctor sin citas, se debe retornar 9
+        // Datos de prueba: ID del doctor 7, ID del paciente 12
+        // Resultado esperado: Variable "estado" es 9
+
+
         [Fact]
         public void getFreeSlots_DevuelveNueveCuposSiElDoctorNoTieneNingunaCita()
         {
@@ -215,6 +290,15 @@ namespace ClinicManagement.Tests
             int estado = instancia.getFreeSlots(Doctor_id, paciente_id, ref resultado);
             Assert.Equal(9, estado);
         }
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 9
+        // ID: 059
+        // Nombre: getFreeSlots devuelve nueve aun cuando hay IDs sin sentido y horas mayores a veinticuatro
+        // Descripción: Al consultar los cupos con datos inválidos, se debe seguir retornando 9
+        // Datos de prueba: ID del doctor 99, ID del paciente 88 (No existen en la base) y una hora 43
+        // Resultado esperado: Variable "estado" es 9
+
 
         [Fact]
         public void getFreeSlots_DevuelveNueve_AunCuandoHayIdsSinSentidoYHorasMayoresAVeinticuatro()
@@ -230,6 +314,15 @@ namespace ClinicManagement.Tests
             Assert.Equal(9, estado);
 
         }
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 10
+        // ID: 060
+        // Nombre: insertAppointment funciona cuando todos los parámetros están correctos y retorna cero
+        // Descripción: Al insertar una cita con todos los parámetros válidos, debe retornar 0
+        // Datos de prueba: ID del doctor 3, contraseña ejemplo6, correo fffffff, tipo 1, nombre Chax, phone 777, address f,
+        // birthdate 1990-05-09, Gender M
+        // Resultado esperado: Variable "estado" es 0
 
         [Fact]
         public void insertAppointmentFuncionaCuandoTodoLosParametrosEstanCorrectosYRetornaCero()
@@ -279,6 +372,16 @@ namespace ClinicManagement.Tests
 
         }
 
+        // ////////////////////////////////////////////////////////
+        // Prueba 11
+        // ID: 061
+        // Nombre: Cuando se inserta correctamente la cita, debe existir un mensaje que no sea nulo
+        // Descripción: Al insertar una cita con todos los parámetros válidos, debe generar un mensaje que indique éxito
+        // Datos de prueba: ID del doctor 3, contraseña ejemplo7, correo ggggg, tipo 1, nombre Max, teléfono 555, dirección g,
+        // fecha de nacimiento 1990-05-09, género M
+        // Resultado esperado: Variable "mes" no es nula
+
+
         [Fact]
         public void CuandoSeInsertaCorrectamenteLaCita_DebeExistirUnMensajeQueNoSeaNulo()
         {
@@ -327,6 +430,16 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 12
+        // ID: 062
+        // Nombre: insertAppointment falla y retorna menos uno
+        // Descripción: Al intentar insertar una cita con IDs inválidos, debe retornar -1
+        // Datos de prueba: ID del doctor 888, ID del paciente 999, hora 6
+        // Resultado esperado: Variable "estado" es -1
+
+
         [Fact]
         public void insertAppointmentFallaRetornaMenosUno()
         {
@@ -337,6 +450,17 @@ namespace ClinicManagement.Tests
             Assert.Equal(-1, estado);
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 13
+        // ID: 063
+        // Nombre: getNotifications cuando el paciente tiene una cita pero la notificación está marcada como vista retorna cero
+        // Descripción: Al consultar las notificaciones de un paciente cuya cita está marcada como vista, debe retornar cero
+        // Datos de prueba: ID del doctor 3, contraseña ejemplo5, correo eeeeee, tipo 1, nombre Roy, teléfono 349, dirección e,
+        // fecha de nacimiento 1990-07-08, género M
+        // Resultado esperado: Variable "estado" es 0
+
 
         [Fact]
         public void getNotificationsCuandoElPacienteTieneUnaCitaPeroLaNotificacionEstaMarcadaComoVistaRetornaCero()
@@ -378,10 +502,14 @@ namespace ClinicManagement.Tests
             cmd36.CommandType = CommandType.Text;
             cmd36.ExecuteNonQuery();
 
+            // Prueba
+
             string dname = null;
             string timings = null;
             int estado = instancia.getNotifications(login_id, ref dname, ref timings);
             Assert.Equal(0, estado);
+
+            // Se quita de la base
 
             SqlCommand cmd4;
             cmd4 = new SqlCommand("delete from Appointment where DoctorID = 3 and PatientID = " + login_id + ";", con);
@@ -403,6 +531,15 @@ namespace ClinicManagement.Tests
 
 
         }
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 14
+        // ID: 064
+        // Nombre: getNotifications cuando el paciente tiene una cita en estado tres retorna tres
+        // Descripción: Al consultar las notificaciones de un paciente cuya cita está en estado tres, debe retornar tres
+        // Datos de prueba: ID del doctor 3, contraseña ejemplo3, correo cccccc, tipo 1, nombre Ian, teléfono 789, dirección c,
+        // fecha de nacimiento 1990-07-09, género M
+        // Resultado esperado: Variable "estado" es 3
 
 
         [Fact]
@@ -445,10 +582,14 @@ namespace ClinicManagement.Tests
             cmd36.CommandType = CommandType.Text;
             cmd36.ExecuteNonQuery();
 
+            // Prueba
+
             string dname = null;
             string timings = null;
             int estado = instancia.getNotifications(login_id, ref dname, ref timings);
             Assert.Equal(3, estado);
+
+            // Se quita de la base
 
             SqlCommand cmd4;
             cmd4 = new SqlCommand("delete from Appointment where DoctorID = 3 and PatientID = " + login_id + ";", con);
@@ -468,6 +609,17 @@ namespace ClinicManagement.Tests
             con.Close();
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 15
+        // ID: 065
+        // Nombre: getNotifications cuando el paciente tiene una cita en estado uno retorna uno
+        // Descripción: Al consultar las notificaciones de un paciente cuya cita está en estado uno, debe retornar uno
+        // Datos de prueba: ID del doctor 3, contraseña ejemplo4, correo dddddd, tipo 1, nombre Pancho, teléfono 456, dirección c,
+        // fecha de nacimiento 1990-07-05, género M
+        // Resultado esperado: Variable "estado" es 1
+
 
         [Fact]
         public void getNotificationsCuandoElPacienteTieneUnaCitaEnEstadoUnoRetornaUno()
@@ -510,10 +662,14 @@ namespace ClinicManagement.Tests
             cmd36.CommandType = CommandType.Text;
             cmd36.ExecuteNonQuery();
 
+            // Prueba
+
             string dname = null;
             string timings = null;
             int estado = instancia.getNotifications(login_id, ref dname, ref timings);
             Assert.Equal(1, estado);
+
+            // Se quita de la base
 
             SqlCommand cmd4;
             cmd4 = new SqlCommand("delete from Appointment where DoctorID = 3 and PatientID = " + login_id + ";", con);
@@ -535,6 +691,16 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 16
+        // ID: 066
+        // Nombre: getNotifications cuando no encuentra paciente retorna cero
+        // Descripción: Al consultar las notificaciones de un paciente que no existe, debe retornar cero
+        // Datos de prueba: ID no existente 1234
+        // Resultado esperado: Variable "estado" es 0
+
+
         [Fact]
         public void getNotificationsCuandoNoEncuentraPacienteRetornaCero()
         {
@@ -547,6 +713,17 @@ namespace ClinicManagement.Tests
 
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 17
+        // ID: 067
+        // Nombre: isFeedbackPending cuando existe cita y hay feedback pendiente
+        // Descripción: Al consultar el feedback de un paciente cuya cita tiene un feedback pendiente, debe retornar uno
+        // Datos de prueba: ID del doctor 3, contraseña ejmplohola, correo aaaaaaaa, tipo 1, nombre Pedro, teléfono 123, dirección a,
+        // fecha de nacimiento 1990-09-09, género M
+        // Resultado esperado: Variable "estado" es 1
+
 
         [Fact]
         public void isFeedbackPendingCuandoExisteCitaYHayFeedbackPendiente()
@@ -613,6 +790,17 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 18
+        // ID: 068
+        // Nombre: isFeedbackPending cuando existe cita pero no hay feedback pendiente retorna cero
+        // Descripción: Al consultar el feedback de un paciente cuya cita no tiene feedback pendiente, debe retornar cero
+        // Datos de prueba: ID del doctor 3, contraseña ejemplo2, correo bbbbbb, tipo 1, nombre Marco, teléfono 321, dirección b,
+        // fecha de nacimiento 1990-08-08, género M
+        // Resultado esperado: Variable "estado" es 0
+
+
         [Fact]
         public void isFeedbackPendingCuandoExisteCitaPeroNoHayFeedbackPendienteRetornaCero()
         {
@@ -669,6 +857,16 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 19
+        // ID: 069
+        // Nombre: isFeedbackPending cuando no existe la cita retorna cero
+        // Descripción: Al consultar el feedback de una cita que no existe, debe retornar cero
+        // Datos de prueba: ID de cita no existente 3485
+        // Resultado esperado: Variable "estado" es 0
+
+
         [Fact]
         public void isFeedbackPendingCuandoNoExisteLaCitaRetornaCero()
         {
@@ -681,6 +879,16 @@ namespace ClinicManagement.Tests
             Assert.Equal(0, estado);
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 20
+        // ID: 070
+        // Nombre: givePendingFeedback cuando la cita existe retorna 0
+        // Descripción: Al dar feedback de una cita existente, debe retornar 0 indicando éxito
+        // Datos de prueba: ID del doctor 4, ID del paciente 13
+        // Resultado esperado: Variable "estado" es 0
+
 
         [Fact]
         public void givePendingFeedbackCuandoLaCitaExisteRetorna0()
@@ -710,6 +918,16 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 21
+        // ID: 071
+        // Nombre: givePendingFeedback cuando la cita no existe retorna 0
+        // Descripción: Al dar feedback de una cita que no existe, debe retornar 0
+        // Datos de prueba: ID de cita no existente 888
+        // Resultado esperado: Variable "estado" es 0
+
+
         [Fact]
         public void givePendingFeedbackCuandoLaCitaNoExisteRetorna0()
         {
@@ -718,6 +936,16 @@ namespace ClinicManagement.Tests
             Assert.Equal(0, estado);
 
         }
+
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 22
+        // ID: 072
+        // Nombre: docinfo_DAL cuando el doctor buscado existe
+        // Descripción: Al consultar la información de un doctor existente, debe retornar uno y obtener información válida
+        // Datos de prueba: ID del doctor 3
+        // Resultado esperado: Variable "estado" es 1 y la cantidad es 1
+
 
         [Fact]
         public void docinfo_DALCuandoElDoctorBuscadoExiste()
@@ -731,6 +959,16 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 23
+        // ID: 073
+        // Nombre: docinfo_DAL cuando el doctor buscado existe se trae la información correcta
+        // Descripción: Al consultar la información de un doctor existente, debe retornar uno y verificar que la información sea correcta
+        // Datos de prueba: ID del doctor 3
+        // Resultado esperado: Variable "estado" es 1 y el nombre es "KASHAN"
+
+
         [Fact]
         public void docinfo_DALCuandoElDoctorBuscadoExisteSeTraeLaInformacionCorrecta()
         {
@@ -742,6 +980,14 @@ namespace ClinicManagement.Tests
             Assert.Equal("KASHAN", resultado.Rows[0]["Name"].ToString());
 
         }
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 24
+        // ID: 074
+        // Nombre: docinfo_DAL cuando el doctor buscado no existe
+        // Descripción: Al consultar la información de un doctor que no existe, debe retornar uno y no devolver filas
+        // Datos de prueba: ID del doctor 78
+        // Resultado esperado: Variable "estado" es 1 y la cantidad de filas es 0
 
         [Fact]
         public void docinfo_DALCuandoElDoctorBuscadoNoExiste()
@@ -755,8 +1001,29 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 25
+        // ID: 075
+        // Nombre: getDeptDoctorInfo retorna una tabla vacía cuando el departamento es una cadena vacía
+        // Descripción: Al solicitar información de doctores para un departamento que es una cadena vacía, se debe retornar una tabla vacía
+        // Datos de prueba: Nombre del departamento ""
+        // Resultado esperado: Variable "resultado.Rows.Count" es 0
+
+
+        [Fact]
+        public void getDeptDoctorInfo_RetornaUnaTablaVacia_CuandoElDepartamentoEsUnaCadenaVacia()
+        {
+            var instancia = new myDAL();
+            var resultado = new DataTable();
+            var departamento = "";
+            int estado = instancia.getDeptDoctorInfo(departamento, ref resultado);
+            Assert.Equal(1, estado);
+            Assert.Equal(0, resultado.Rows.Count);
+        }
+
+
+
     }
 
 }
-
-
