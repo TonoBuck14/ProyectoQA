@@ -691,7 +691,7 @@ namespace ClinicManagement.Tests
             // Se inserta ejemplo
 
             SqlCommand cmd1;
-            cmd1 = new SqlCommand("insert into Appointment(DoctorID,PatientID) values (3,12);", con);
+            cmd1 = new SqlCommand("insert into Appointment(DoctorID,PatientID) values (4,13);", con);
             cmd1.CommandType = CommandType.Text;
             var cita_id = Convert.ToInt32(cmd1.ExecuteScalar());
 
@@ -703,7 +703,7 @@ namespace ClinicManagement.Tests
             // Se quita para mantener la base igual
 
             SqlCommand cmd2;
-            cmd2 = new SqlCommand("delete from Appointment where DoctorID = 3 and PatientID = 12;", con);
+            cmd2 = new SqlCommand("delete from Appointment where DoctorID = 4 and PatientID = 13;", con);
             cmd2.CommandType = CommandType.Text;
             cmd2.ExecuteNonQuery();
             con.Close();

@@ -619,3 +619,6 @@ C:\Users\User\ProyectoQA\Code\DBProject\obj\Debug\DBProject.pdb
 C:\Users\User\ProyectoQA\Code\DBProject\bin\Castle.Core.dll
 C:\Users\User\ProyectoQA\Code\DBProject\bin\Moq.dll
 C:\Users\User\ProyectoQA\Code\DBProject\bin\Castle.Core.xml
+C:\Users\anton\OneDrive\Documents\Tec\QA\ProyectoQA\Code\DBProject\bin\Castle.Core.dll
+C:\Users\anton\OneDrive\Documents\Tec\QA\ProyectoQA\Code\DBProject\bin\Moq.dll
+C:\Users\anton\OneDrive\Documents\Tec\QA\ProyectoQA\Code\DBProject\bin\Castle.Core.xml

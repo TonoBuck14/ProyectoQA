@@ -7,14 +7,25 @@ namespace ClinicManagement.Tests
     [CollectionDefinition("PruebasAntonio", DisableParallelization = true)]
     public class Pruebas_A
     {
+        
         private static readonly string connString = "Data Source=.\\SQLEXPRESS; Initial Catalog=DBProject; Integrated Security=True; TrustServerCertificate=True";
-        //validate login
+
+
+        // 1. Login exitoso
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 1
+        // ID: 001
+        // Nombre: Login exitoso retorna 0
+        // Descripción: AL hacer con éxito un login el método retorna 0
+        // Datos de prueba: el correo y la contraseña de un usuario administrador que esta en la base de datos
+        // Resultado esperado: 0
         [Fact]
         public void loginExitosoDevuelveUnEntero0()
         {
             //se usa un usuario que ya existía en la base de datos
-            var email = "admin";
-            var password = "admin@clinic.com";
+            var email = "admin@clinic.com";
+            var password = "admin";
             int type = 3;
             int id = 1;
 
@@ -30,6 +41,15 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 2. Login fallido
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 2
+        // ID: 002
+        // Nombre: Login fallido retorna 1
+        // Descripción: AL hacer un login fallido el método retorna 1
+        // Datos de prueba: el correo y la contraseña de un usuario que no existe en la base de datos
+        // Resultado esperado: 1
         [Fact]
         public void loginFallidoDevuelveUnEntero1()
         {

@@ -667,7 +667,7 @@ namespace ClinicManagement.Tests
          * Resultado esperado:
          */
         [Fact]
-        [TestBeforeAfter(124, 124, 124, 124, 1)]
+        [TestBeforeAfter(124, 124, 124, 124, 3)]
         public void getPHistory___Con_Doctor_Normal()
         {
             var instancia = new myDAL();
