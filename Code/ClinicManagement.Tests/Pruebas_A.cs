@@ -68,6 +68,15 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 3. Login fallido
+
+        // ////////////////////////////////////////////////////////
+        // Prueba 3
+        // ID: 003
+        // Nombre: Login fallido con email largo retorna 1
+        // Descripción: AL hacer un login con email largo el método retorna 1
+        // Datos de prueba: el correo largo y la contraseña de un usuario que no existe en la base de datos
+        // Resultado esperado: 1
         [Fact]
         public void unEmailLargoSinContraseniaRetorna1()
         {
@@ -84,6 +93,14 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 4. Validar usuario existente
+        // ////////////////////////////////////////////////////////
+        // Prueba 4
+        // ID: 004
+        // Nombre: Validación de usuario existente retorna 0
+        // Descripción: Al validar un usuario existente, el método retorna 0.
+        // Datos de prueba: Información del usuario que ya está en la base de datos.
+        // Resultado esperado: 0
         [Fact]
         public void validarUsuarioExistenteRetorna0()
         {
@@ -105,6 +122,15 @@ namespace ClinicManagement.Tests
             Assert.Equal(0, result); 
         }
 
+
+        // 5. Validación de formato de fecha incorrecto
+        // ////////////////////////////////////////////////////////
+        // Prueba 5
+        // ID: 005
+        // Nombre: Formato de fecha incorrecto en validación de usuario
+        // Descripción: Al ingresar una fecha con formato incorrecto, el método debe retornar -1.
+        // Datos de prueba: Usuario nuevo con fecha en formato "01/01/1990".
+        // Resultado esperado: -1
         [Fact]
         public void formatodeFechaConSlashRetorna1negativo()
         {
@@ -137,6 +163,14 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 6. Formato de fecha incorrecto
+        // ////////////////////////////////////////////////////////
+        // Prueba 6
+        // ID: 006
+        // Nombre: Formato de fecha incorrecto en validación de usuario
+        // Descripción: Se pone un usuaario con una fecha invalida
+        // Datos de prueba: El usuario y la fecha 1990-01-01
+        // Resultado esperado: -1
         [Fact]
         public void formatodeFechaIncorrectoRetorna1negativo()
         {
@@ -167,6 +201,15 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // 7. Un doctor con email ya existente en la base de datos
+        // ////////////////////////////////////////////////////////
+        // Prueba 7
+        // ID: 007
+        // Nombre: Verificar email de doctor existente en la base de datos retorna 1
+        // Descripción: Al verificar un email de doctor que ya existe en la base de datos, el método debe retornar 1.
+        // Datos de prueba: email: hassaan@gmail.com
+        // Resultado esperado: 1
         [Fact]
         public void correoDeDoctorYaExisteRetorna1()
         {
@@ -176,6 +219,14 @@ namespace ClinicManagement.Tests
             Assert.Equal(1, result);
         }
 
+        // 8. Correo de doctor no existente en la base de datos
+        // ////////////////////////////////////////////////////////
+        // Prueba 8
+        // ID: 008
+        // Nombre: Verificar email de doctor no existente en la base de datos retorna 0
+        // Descripción: Al verificar un email de doctor que no existe en la base de datos, el método debe retornar 0.
+        // Datos de prueba: email: correoquenoexiste@gmail.com
+        // Resultado esperado: 0
         [Fact]
         public void correoDeDoctorNoExistenteRetorna0()
         {
@@ -185,6 +236,14 @@ namespace ClinicManagement.Tests
             Assert.Equal(0, result);
         }
 
+        // 9. Correo vacío
+        // ////////////////////////////////////////////////////////
+        // Prueba 9
+        // ID: 009
+        // Nombre: Verificar email vacío retorna 0
+        // Descripción: Al verificar un email vacío, el método debe retornar 0.
+        // Datos de prueba: email: ""
+        // Resultado esperado: 0
         [Fact]
         public void correoVacioRetorna0()
         {
@@ -194,6 +253,27 @@ namespace ClinicManagement.Tests
             Assert.Equal(0, result);
         }
 
+        // 10. Doctor con nombre retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 10
+        // ID: 010
+        // Nombre: Agregar doctor con nombre retorna 1
+        // Descripción: Al agregar un doctor con nombre, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: SantiDoc
+        // email: santidoctor@gmail.com
+        // password: 12345
+        // birthDate: 01-01-1989
+        // dept: 1
+        // phoneNo: 12345678901
+        // gender: M
+        // address: Costa Rica
+        // experience: 5
+        // salary: 5000
+        // charges: 500
+        // speciality: Heart
+        // qual: Master
+        // Resultado esperado: 1
         [Fact]
         public void agregarDoctorConNombreRetorna1()
         {
@@ -236,6 +316,27 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 11. Doctor con nombre de barras retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 11
+        // ID: 011
+        // Nombre: Agregar doctor con nombre de barras retorna 1
+        // Descripción: Al agregar un doctor con nombre de barras, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: ////
+        // email:
+        // password: 12345
+        // birthDate: 01-01-1989
+        // dept: 1
+        // phoneNo: 12345678901
+        // gender: M
+        // address: Costa Rica
+        // experience: 5
+        // salary: 5000
+        // charges: 500
+        // speciality: Heart
+        // qual: Master
+        // Resultado esperado: 1
         [Fact]
         public void agregarDoctorConNombreDeBarrasRetorna1()
         {
@@ -278,6 +379,28 @@ namespace ClinicManagement.Tests
 
         }
 
+
+        // 12. Doctor sin qual retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 12
+        // ID: 012
+        // Nombre: Agregar doctor sin qual retorna 1
+        // Descripción: Al agregar un doctor sin qual, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: SinQual
+        // email: noqual@gmail.com
+        // password: 12345
+        // birthDate: 01-01-1989
+        // dept: 1
+        // phoneNo: 12345678901
+        // gender: M
+        // address: Costa Rica
+        // experience: 5
+        // salary: 5000
+        // charges: 500
+        // speciality: Heart
+        // qual: 
+        // Resultado esperado: 1
         [Fact]
         public void agregarDoctorSinQualRetorna1()
         {
@@ -321,6 +444,23 @@ namespace ClinicManagement.Tests
         }
 
 
+        // 13. Staff con nombre retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 13
+        // ID: 013
+        // Nombre: Agregar staff con nombre retorna 1
+        // Descripción: Al agregar un staff con nombre, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: StaffEjemplo
+        // birthDate: 01-01-1990
+        // phone: 12345678901
+        // gender: M
+        // address: Costa Rica
+        // salary: 5000
+        // qual: Master
+        // designation: Receptionist
+        // Resultado esperado: 1
+
         [Fact]
         public void agregarstaffConNombreRetorna1()
         {
@@ -349,6 +489,22 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 14. Staff sin salario retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 14
+        // ID: 014
+        // Nombre: Agregar staff sin salario retorna 1
+        // Descripción: Al agregar un staff sin salario, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: StaffNoSalario
+        // birthDate: 01-01-1990
+        // phone: 12345678901
+        // gender: M
+        // address: Costa Rica
+        // salary: 0
+        // qual: Master
+        // designation: Receptionist
+        // Resultado esperado: 1
         [Fact]
         public void agregarstaffSinSalarioRetorna1 ()
         {
@@ -377,6 +533,22 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 15. Staff con numero de tel alfanumerico retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 15
+        // ID: 015
+        // Nombre: Agregar staff con numero de tel alfanumerico retorna 1
+        // Descripción: Al agregar un staff con numero de tel alfanumerico, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: StaffAlfanum
+        // birthDate: 01-01-1990
+        // phone: 1qw45678901
+        // gender: M
+        // address: Costa Rica
+        // salary: 0
+        // qual: Master
+        // designation: Receptionist
+        // Resultado esperado: 1
         [Fact]
         public void staffConNumeroDeTelefonoAlfanumericoRetorna1()
         {
@@ -405,6 +577,22 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 16. Staff sin nombre retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 16
+        // ID: 016
+        // Nombre: Agregar staff sin nombre retorna 1
+        // Descripción: Al agregar un staff sin nombre, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre:
+        // birthDate: 01-01-1990
+        // phone: 1qw45678901
+        // gender: M
+        // address: Costa Rica
+        // salary: 0
+        // qual: Master
+        // designation: Receptionist
+        // Resultado esperado: 1
         [Fact]
         public void staffSinNombreRetorna1()
         {
@@ -433,6 +621,22 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 17. Staff sin address retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 17
+        // ID: 017
+        // Nombre: Agregar staff sin address retorna 1
+        // Descripción: Al agregar un staff sin address, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: SinAddress
+        // birthDate: 01-01-1990
+        // phone: 1qw45678901
+        // gender: M
+        // address:
+        // salary: 0
+        // qual: Master
+        // designation: Receptionist
+        // Resultado esperado: 1
         [Fact]
         public void staffSinAddressRetorna1()
         {
@@ -461,7 +665,22 @@ namespace ClinicManagement.Tests
 
         }
 
-
+        // 18. Staff con formato de fecha incorrecto retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 18
+        // ID: 018
+        // Nombre: Agregar staff con formato de fecha incorrecto retorna 1
+        // Descripción: Al agregar un staff con formato de fecha incorrecto, el método debe retornar 1.
+        // Datos de prueba:
+        // nombre: FechaMala
+        // birthDate: 90-01-01
+        // phone: 1qw45678901
+        // gender: M
+        // address: Costa Rica
+        // salary: 0
+        // qual: Master
+        // designation: Receptionist
+        // Resultado esperado: 1
         [Fact]
         public void staffconFormatoDeFechaIncorrectoRetorna1negativo()
         {
@@ -483,6 +702,14 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 19. Get admin home retorna un DataTable no vacío
+        // ////////////////////////////////////////////////////////
+        // Prueba 19
+        // ID: 019
+        // Nombre: Get admin home retorna un DataTable no vacío
+        // Descripción: Al obtener la información de la página de inicio del administrador, el método debe retornar un DataTable no vacío.
+        // Datos de prueba:
+        // Resultado esperado: DataTable no vacío
         [Fact]
         public void getAdminHomeRetornaUnDTNoVacio()
         {
@@ -497,6 +724,14 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 20. Borrar doctor nuevo retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 20
+        // ID: 020
+        // Nombre: Borrar doctor nuevo retorna 1
+        // Descripción: Al borrar un doctor nuevo, el método debe retornar 1.
+        // Datos de prueba: insercion creada
+        // Resultado esperado: 1
         [Fact]
         public void borrarDoctorNuevoRetorna1()
         {
@@ -519,14 +754,31 @@ namespace ClinicManagement.Tests
 
         }
 
+        // 21. Borrar doctor inexistente retorna -1
+        // ////////////////////////////////////////////////////////
+        // Prueba 21
+        // ID: 021
+        // Nombre: Borrar doctor inexistente retorna -1
+        // Descripción: Al borrar un doctor inexistente, el método debe retornar -1.
+        // Datos de prueba: id de doctor inexistente
+        // Resultado esperado: -1
+        // da error la prueba, porque retorna 1 en vez de -1, pero debería retornar -1
         [Fact]
-        public void borrarDoctorInexistenteRetorna1Tambien()
+        public void borrarDoctorInexistenteRetorna1Negativo()
         {
             var dal = new myDAL();
             var result = dal.DeleteDoctor(0);
-            Assert.Equal(1, result);
+            Assert.Equal(-1, result);
         }
 
+        // 22. Borrar staff nuevo retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 22
+        // ID: 022
+        // Nombre: Borrar staff nuevo retorna 1
+        // Descripción: Al borrar un staff nuevo, el método debe retornar 1.
+        // Datos de prueba: insercion creada
+        // Resultado esperado: 1
         [Fact]
         public void borrarStaffNuevoRetorna1()
         {
@@ -552,14 +804,31 @@ namespace ClinicManagement.Tests
             Assert.Equal(1, result);
         }
 
+        // 23. Borrar staff inexistente retorna 1
+        // ////////////////////////////////////////////////////////
+        // Prueba 23
+        // ID: 023
+        // Nombre: Borrar staff inexistente retorna -1
+        // Descripción: Al borrar un staff inexistente, el método debe retornar -1.
+        // Datos de prueba: id de staff inexistente
+        // Resultado esperado: -1
+        // da error la prueba, porque retorna 1 en vez de -1, pero debería retornar -1
         [Fact]
-        public void borrarStaffInexistenteRetorna1Tambien()
+        public void borrarStaffInexistenteRetorna1Negativo()
         {
             var dal = new myDAL();
             var result = dal.DeleteStaff(0);
-            Assert.Equal(1, result);
+            Assert.Equal(-1, result);
         }
 
+        // 24. Cargar doctor sin query retorna un DataTable no vacío
+        // ////////////////////////////////////////////////////////
+        // Prueba 24
+        // ID: 024
+        // Nombre: Cargar doctor sin query retorna un DataTable no vacío
+        // Descripción: Al cargar doctores sin query, el método debe retornar un DataTable no vacío.
+        // Datos de prueba:
+        // Resultado esperado: DataTable no vacío
         [Fact]
         public void loadDoctorSinQueryRetornaUnDTNoVacio()
         {
@@ -569,6 +838,14 @@ namespace ClinicManagement.Tests
             Assert.True(dt.Rows.Count > 0);
         }
 
+        // 25. Cargar doctor con query válido retorna un DataTable no vacío
+        // ////////////////////////////////////////////////////////
+        // Prueba 25
+        // ID: 025
+        // Nombre: Cargar doctor con query válido retorna un DataTable no vacío
+        // Descripción: Al cargar doctores con query válido, el método debe retornar un DataTable no vacío.
+        // Datos de prueba: query: HASSAAN
+        // Resultado esperado: DataTable no vacío
         [Fact]
         public void loadDoctorConQueryValidoRetornaUnDTNoVacio()
         {

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<coverage line-rate="0.42918192918192916" branch-rate="0.074712643678160925" complexity="235" version="1.9" timestamp="1730665987" lines-covered="703" lines-valid="1638" branches-covered="13" branches-valid="174">
+<coverage line-rate="0.42918192918192916" branch-rate="0.074712643678160925" complexity="235" version="1.9" timestamp="1730669006" lines-covered="703" lines-valid="1638" branches-covered="13" branches-valid="174">
   <packages>
     <package line-rate="0.42918192918192916" branch-rate="0.074712643678160925" complexity="235" name="DBProject">
       <classes>
