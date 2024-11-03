@@ -1,4 +1,16 @@
-# ⚕️ Hospital Management System - Made using C#, ASP.net
+# Extensión del README
+
+Este subproyecto consiste en implementar un sistema de pruebas para el "Hospital Management System". Sus integrantes son:
+- Antonio Enrique Fernández García
+- Josué David Mena González
+- Marco Rodríguez Vargas
+- Maximilian Latysh
+En total, se implementaron 100 pruebas unitarias, proporcionando una cobertura de aproximadamente 42% según la herramienta FineCodeCoverage para Visual Studio y C# bajo el ambiente de desarrollo .NET. El proyecto original en sí se puede encontrar bajo la carpeta `Code/DBProject`. Las pruebas unitarias se ubican bajo la carpeta `Code/ClinicManagement.Tests` y se enfocan en el subpaquete del sistema conocido como DAL.
+
+## Evidencia del uso de la herramienta de cobertura
+<img src="EvidenciaHerramienteCobertura.png">
+
+# README Original : ⚕️ Hospital Management System - Made using C#, ASP.net
 
 A fully featured Clinic Management System having a well designed Database Schema made as a final project for the course "Application Development with .NET and Web Services CS624" during my Semester at [Pace University](https://www.pace.edu/). Its based on the 3 Tier Architecture.
 
