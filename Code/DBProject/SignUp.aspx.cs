@@ -88,7 +88,7 @@ namespace DBProject
             string Addr = Address.Text;
 
             string gender = Request.Form["Gender"].ToString();
-           
+
 
 
             myDAL objmyDAl = new myDAL();
@@ -108,7 +108,7 @@ namespace DBProject
             {
                 Session["idoriginal"] = id;
 
-              //Response.Write("<script>alert('Registration Successful !');</script>");
+                //Response.Write("<script>alert('Registration Successful !');</script>");
 
                 Response.BufferOutput = true;
                 Response.Redirect("~/Patient/PatientHome.aspx");
@@ -118,10 +118,10 @@ namespace DBProject
             {
                 Response.Write("<script>alert('There was some error. Try again !');</script>");
             }
-           
+
         }
 
-            //Enter new function here//
+        //Enter new function here//
     }
 
 }
