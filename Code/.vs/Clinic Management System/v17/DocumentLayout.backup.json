@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|solutionrelative:clinicmanagement.tests\\pruebas_m.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|c:\\users\\user\\proyectoqa\\code\\clinicmanagement.tests\\pruebas_j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|solutionrelative:clinicmanagement.tests\\pruebas_j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|C:\\Users\\User\\ProyectoQA\\Code\\dbproject\\dal\\mydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|solutionrelative:dbproject\\dal\\mydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|c:\\users\\user\\proyectoqa\\code\\clinicmanagement.tests\\pruebas_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|solutionrelative:clinicmanagement.tests\\pruebas_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|c:\\users\\user\\proyectoqa\\code\\clinicmanagement.tests\\pruebas_j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CC2F968-79C3-439C-BA74-1DB2FCA65C77}|ClinicManagement.Tests\\ClinicManagement.Tests.csproj|solutionrelative:clinicmanagement.tests\\pruebas_j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2ABDB6C-A1B7-460C-84D1-FB2317C5C666}|DBProject\\Clinic Management System.csproj|C:\\Users\\User\\ProyectoQA\\Code\\dbproject\\signup.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -58,27 +58,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "myDAL.cs",
               "DocumentMoniker": "C:\\Users\\User\\ProyectoQA\\Code\\DBProject\\DAL\\myDAL.cs",
               "RelativeDocumentMoniker": "DBProject\\DAL\\myDAL.cs",
               "ToolTip": "C:\\Users\\User\\ProyectoQA\\Code\\DBProject\\DAL\\myDAL.cs",
               "RelativeToolTip": "DBProject\\DAL\\myDAL.cs",
-              "ViewState": "AgIAAI8DAAAAAAAAAAAiwKEDAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGcCAAAAAAAAAAAYwHcCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T07:17:49.668Z"
+              "WhenOpened": "2024-11-01T07:17:49.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Pruebas_ML.cs",
               "DocumentMoniker": "C:\\Users\\User\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_ML.cs",
               "RelativeDocumentMoniker": "ClinicManagement.Tests\\Pruebas_ML.cs",
               "ToolTip": "C:\\Users\\User\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_ML.cs",
               "RelativeToolTip": "ClinicManagement.Tests\\Pruebas_ML.cs",
-              "ViewState": "AgIAAJACAAAAAAAAAADwv6cCAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADcBAAAAAAAAAAAAwO4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:51:34.206Z"
+              "WhenOpened": "2024-11-01T01:51:34.206Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -88,22 +90,23 @@
               "RelativeDocumentMoniker": "ClinicManagement.Tests\\Pruebas_M.cs",
               "ToolTip": "C:\\Users\\User\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_M.cs",
               "RelativeToolTip": "ClinicManagement.Tests\\Pruebas_M.cs",
-              "ViewState": "AgIAANYBAAAAAAAAAAAwwK4CAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T00:16:44.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Pruebas_J.cs",
               "DocumentMoniker": "C:\\Users\\User\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_J.cs",
               "RelativeDocumentMoniker": "ClinicManagement.Tests\\Pruebas_J.cs",
               "ToolTip": "C:\\Users\\User\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_J.cs",
               "RelativeToolTip": "ClinicManagement.Tests\\Pruebas_J.cs",
-              "ViewState": "AgIAAGABAAAAAAAAAADwv/oCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwPoCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T01:13:54.331Z"
+              "WhenOpened": "2024-10-31T01:13:54.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -119,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Pruebas_A.cs",
               "DocumentMoniker": "C:\\Users\\User\\ProyectoQA\\Code\\ClinicManagement.Tests\\Pruebas_A.cs",
               "RelativeDocumentMoniker": "ClinicManagement.Tests\\Pruebas_A.cs",
