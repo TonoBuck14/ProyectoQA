@@ -592,7 +592,7 @@ namespace ClinicManagement.Tests
             // Arrange
             var instancia = new myDAL();
             var resultado = new DataTable();
-            int patientId = 996036;
+            int patientId = 12;
 
             // Act
             int estado = instancia.getBillHistory(patientId, ref resultado);
@@ -647,7 +647,7 @@ namespace ClinicManagement.Tests
             // Arrange
             var instancia = new myDAL();
             // Este paciente esta programado por defecto en la base de datos para tener 2 citas diarias
-            int patientId = 996036;
+            int patientId = 12;
             string dName = null;
             string timings = null;
 
@@ -707,7 +707,7 @@ namespace ClinicManagement.Tests
             // Arrange
             var instancia = new myDAL();
             var resultado = new DataTable();
-            int patientId = 996036;
+            int patientId = 12;
 
             // Act
             int estado = instancia.getTreatmentHistory(patientId, ref resultado);
@@ -762,7 +762,7 @@ namespace ClinicManagement.Tests
             // Arrange
             var instancia = new myDAL();
             var resultado = new DataTable();
-            int patientId = 996036;
+            int patientId = 12;
 
             // Act
             int estado = instancia.getBillHistory(patientId, ref resultado);
@@ -841,7 +841,7 @@ namespace ClinicManagement.Tests
             // Arrange
             var instancia = new myDAL();
             var resultado = new DataTable();
-            int patientId = 996036; // ID del paciente para el cual se buscan las facturas
+            int patientId = 12; // ID del paciente para el cual se buscan las facturas
 
             // Act
             int estado = instancia.getBillHistory(patientId, ref resultado); // Asume que este método obtiene las facturas

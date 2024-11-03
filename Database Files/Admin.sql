@@ -84,6 +84,7 @@ SET @status = 0
 
 END
 
+GO
 --EXECUTION---
 DECLARE @r int 
 EXEC CheckDoctorEmail  'hassaan.elahi@hotmail.com'  , @r output
