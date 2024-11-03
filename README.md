@@ -5,6 +5,7 @@ Este subproyecto consiste en implementar un sistema de pruebas para el "Hospital
 - Josué David Mena González
 - Marco Rodríguez Vargas
 - Maximilian Latysh
+
 En total, se implementaron 100 pruebas unitarias, proporcionando una cobertura de aproximadamente 42% según la herramienta FineCodeCoverage para Visual Studio y C# bajo el ambiente de desarrollo .NET. El proyecto original en sí se puede encontrar bajo la carpeta `Code/DBProject`. Las pruebas unitarias se ubican bajo la carpeta `Code/ClinicManagement.Tests` y se enfocan en el subpaquete del sistema conocido como DAL.
 
 ## Evidencia del uso de la herramienta de cobertura
