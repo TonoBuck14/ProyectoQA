@@ -21,7 +21,7 @@ class pruebas_j(unittest.TestCase):
        
         conn_str = (
         r'DRIVER={ODBC Driver 17 for SQL Server};'
-        r'SERVER=LAPTOP-QHBOLTCG\SQLEXPRESS;'
+        r'SERVER=DESKTOP-UQDSHLB\SQLEXPRESS;'
         r'DATABASE=DBProject;'
         r'Trusted_Connection=yes;' 
         )
